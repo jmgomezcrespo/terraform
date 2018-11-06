@@ -11,8 +11,10 @@ init() {
      fi
    fi
  fi
-
- terraform remote config \
+  export AWS_ACCESS_KEY_ID=varAK
+  export AWS_SECRET_ACCESS_KEY=varSK
+  
+terraform remote config \
    -backend=s3 \
    -backend-config="bucket=${BUCKET}" \
    -backend-config="key=terraform.tfstate" \
