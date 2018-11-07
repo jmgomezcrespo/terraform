@@ -17,6 +17,6 @@ terraform {
 resource "aws_s3_bucket" "terraform" {
   bucket = "test-jenkins-equinix"
   versioning {
-    enabled = true
+    enabled = false
   }
 }
