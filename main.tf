@@ -9,6 +9,8 @@ terraform {
     bucket = "test-jenkins-equinix-backend"
     key    = "terraform.tfstate"
     region = "eu-west-1"
+    access_key = "varAK" 
+    secret_key = "varSK"
   }
 }
 
